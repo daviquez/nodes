@@ -1,0 +1,71 @@
+/*///////////////////////////////////////////
+|				View Mode				|
+///////////////////////////////////////////*/
+.section-view{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.section-view::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: salmon;
+	background-image: url(../img/kazan4.jpg);
+	background-size: cover;
+	background-blend-mode: lighten;
+	filter: brightness(60%) grayscale(30%);
+	z-index:-1;
+}
+.nav-buttons{
+	display: flex;
+	justify-content: space-between;
+	padding: 34px;
+}
+
+.display{
+	display: flex;
+	height: 500px;
+	margin: 0 auto;
+	width: 70%;
+	background: #eeeeee;
+	margin-top: 100px;
+	flex-direction: column;
+}
+
+.display div{
+	height: 90%;
+	width:100%;
+	border: solid 1px salmon;
+	padding: 10px;
+	background: white;
+}
+
+.display .nav-buttons{
+	height: 75px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: white;
+	border: 1px solid salmon;
+	display: flex;
+	justify-content: center;
+}
+
+.display .nav-buttons .btn-slide{
+	border: solid 2px salmon;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+h4{
+	margin: 0;
+}
+
+.display .content{
+	overflow-y: scroll; 
+}
